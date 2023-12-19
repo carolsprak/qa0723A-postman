@@ -19,7 +19,7 @@ jobs:
       - run: npm install -g newman-reporter-htmlextra
     
   api-test:
-
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
